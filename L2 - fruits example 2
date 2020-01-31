@@ -1,0 +1,28 @@
+#This is the code example for alternative exercise from Lecture 2 slide 16.
+
+#Lets write a simple program to determine if you can afford to buy:
+#1 orange : RM 1.00
+#1 apple : RM 1.50
+#1 mango : RM 4.00
+#You have a starting total cash of : RM 15
+#If you cannot afford all fruits, the priority is to buy : mango > apple > orange
+
+#CODE STARTS BELOW
+total_cash = 15
+mango = 4
+apple = 1.50
+orange = 1
+
+if total_cash < orange:
+  print ("You cannot afford to buy any fruits")
+
+if total_cash >= mango:
+  print ("You can afford one mango")
+  total_cash = total_cash - mango
+
+if total_cash >= apple:
+  print ("You can afford one apple")
+  total_cash = total_cash - apple
+
+if total_cash >= orange:
+  print ("You can afford one orange")
